@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farmer Registration - Smart Irrigation</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="farm-info.html">Farm Dashboard</a></li>
+            <li><a href="advisory.html">Irrigation Advisory</a></li>
+            <li><a href="gallery.html">Farm Gallery</a></li>
+            <li><a href="plot-map.html">Farm Map</a></li>
+            <li><a href="irrigation-table.html">Irrigation Table</a></li>
+            <li><a href="registration.html">Farmer Registration</a></li>
+            <li><a href="weather.html">Weather Forecast</a></li>
+            <li><a href="media.html">Multimedia Awareness</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Farmer &amp; Farm Plot Registration</h1>
+        <p><em>Enroll your sugarcane plot to receive automated AI-based irrigation schedules</em></p>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- enctype="multipart/form-data" is required for file uploads -->
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <!-- Fieldset 1: Personal Details -->
+            <fieldset>
+                <legend><b>1. Farmer Personal Information</b></legend>
+                <p>
+                    <label for="farmer-name">Full Name: *</label><br>
+                    <input type="text" id="farmer-name" name="farmer_name" 
+                           placeholder="Enter your full name" 
+                           autofocus 
+                           required>
+                </p>
+
+                <p>
+                    <label for="mobile">Mobile Number: *</label><br>
+                    <input type="tel" id="mobile" name="mobile" 
+                           placeholder="10-digit mobile number" 
+                           pattern="[0-9]{10}" 
+                           title="Please enter a valid 10-digit mobile number" 
+                           required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address: *</label><br>
+                    <input type="email" id="email" name="email" 
+                           placeholder="farmer@example.com" 
+                           required>
+                </p>
+
+                <p>
+                    <label for="village">Village / Taluka: *</label><br>
+                    <input type="text" id="village" name="village" 
+                           placeholder="Enter your village or district" 
+                           required>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <!-- Fieldset 2: Farm & Crop Details -->
+            <fieldset>
+                <legend><b>2. Farm Plot &amp; Crop Information</b></legend>
+
+                <p>
+                    <label for="plot-id">Plot Identifier (Plot ID): *</label><br>
+                    <input type="text" id="plot-id" name="plot_id" 
+                           placeholder="e.g. KJS-PLOT-101" 
+                           required>
+                </p>
+
+                <p>
+                    <label for="crop-stage">Current Sugarcane Crop Stage: *</label><br>
+                    <select id="crop-stage" name="crop_stage" required>
+                        <option value="">-- Select Crop Stage --</option>
+                        <option value="Germination">Germination Phase (Days 0-45)</option>
+                        <option value="Tillering">Tillering Phase (Days 45-120)</option>
+                        <option value="Grand Growth">Grand Growth Phase (Days 120-270)</option>
+                        <option value="Maturity">Maturity Phase (Days 270-360)</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="soil-type">Soil Type: *</label><br>
+                    <select id="soil-type" name="soil_type" required>
+                        <option value="">-- Select Soil Type --</option>
+                        <option value="Black Soil">Black Cotton Soil</option>
+                        <option value="Loamy">Loamy Soil</option>
+                        <option value="Clay">Clay Soil</option>
+                        <option value="Alluvial">Alluvial Soil</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="irrigation-method">Existing Irrigation Method: *</label><br>
+                    <select id="irrigation-method" name="irrigation_method" required>
+                        <option value="">-- Select Irrigation Method --</option>
+                        <option value="Drip">Drip Irrigation (Recommended)</option>
+                        <option value="Sprinkler">Sprinkler Irrigation</option>
+                        <option value="Furrow">Furrow Irrigation</option>
+                        <option value="Flood">Flood / Surface Irrigation</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="reg-date">Registration / Sowing Date: *</label><br>
+                    <input type="date" id="reg-date" name="reg_date" required>
+                </p>
+
+                <p>
+                    <label for="farm-photo">Upload Farm Photo: *</label><br>
+                    <input type="file" id="farm-photo" name="farm_photo" accept="image/*" required>
+                </p>
+            </fieldset>
+
+            <br>
+
+            <!-- Form Submission Buttons -->
+            <p>
+                <input type="submit" value="Register Farm">
+                <input type="reset" value="Clear Form">
+            </p>
+
+        </form>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 AI-based Smart Irrigation Advisory System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

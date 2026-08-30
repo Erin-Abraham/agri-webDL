@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farm Plot Navigation - Image Map</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="farm-info.html">Farm Dashboard</a></li>
+            <li><a href="advisory.html">Irrigation Advisory</a></li>
+            <li><a href="gallery.html">Farm Gallery</a></li>
+            <li><a href="plot-map.html">Farm Map</a></li>
+            <li><a href="irrigation-table.html">Irrigation Table</a></li>
+            <li><a href="registration.html">Farmer Registration</a></li>
+            <li><a href="weather.html">Weather Forecast</a></li>
+            <li><a href="media.html">Multimedia Awareness</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Sugarcane Farm Plot Navigation</h1>
+        <p><em>Click on any plot on the map below to view real-time irrigation &amp; soil status</em></p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>Interactive Farm Field Map</h2>
+        <p><em>(Hover your mouse over different areas of the image: Plot A on the left, Plot B in the center, Plot C on the right)</em></p>
+
+        <!-- 1. The Image with usemap -->
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&h=300&fit=crop" 
+             usemap="#farmmap" 
+             alt="Aerial view of Sugarcane Farm Plots" 
+             width="600" 
+             height="300">
+
+        <!-- 2. The Map with 3 Clickable Areas -->
+        <map name="farmmap">
+            <!-- Left area: Plot A -->
+            <area shape="rect" coords="0,0,200,300" href="#plot-a" alt="Plot A Details" title="Click to view Plot A Details">
+            
+            <!-- Middle area: Plot B -->
+            <area shape="rect" coords="200,0,400,300" href="#plot-b" alt="Plot B Details" title="Click to view Plot B Details">
+            
+            <!-- Right area: Plot C -->
+            <area shape="rect" coords="400,0,600,300" href="#plot-c" alt="Plot C Details" title="Click to view Plot C Details">
+        </map>
+    </section>
+
+    <hr>
+
+    <!-- 3. Plot Details Sections (Where the areas link to) -->
+    <section id="plot-a">
+        <h3>Plot A Details</h3>
+        <p>
+            <strong>Crop:</strong> Sugarcane (Co 86032) <br>
+            <strong>Growth Stage:</strong> Grand Growth <br>
+            <strong>Soil Moisture:</strong> 28% (<mark>Water Deficit</mark>) <br>
+            <strong>Action:</strong> Automated drip valve active for 45 minutes.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="plot-b">
+        <h3>Plot B Details</h3>
+        <p>
+            <strong>Crop:</strong> Sugarcane (CoM 0265) <br>
+            <strong>Growth Stage:</strong> Tillering Stage <br>
+            <strong>Soil Moisture:</strong> 65% (Optimal) <br>
+            <strong>Action:</strong> No irrigation required today.
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="plot-c">
+        <h3>Plot C Details</h3>
+        <p>
+            <strong>Crop:</strong> Sugarcane (MS 10001) <br>
+            <strong>Growth Stage:</strong> Germination <br>
+            <strong>Soil Moisture:</strong> 42% (Moderate) <br>
+            <strong>Action:</strong> Light sprinkler irrigation scheduled for 20 minutes in evening.
+        </p>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 AI-based Smart Irrigation Advisory System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

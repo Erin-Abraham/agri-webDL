@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soil Moisture &amp; Irrigation Table</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="farm-info.html">Farm Dashboard</a></li>
+            <li><a href="advisory.html">Irrigation Advisory</a></li>
+            <li><a href="gallery.html">Farm Gallery</a></li>
+            <li><a href="plot-map.html">Farm Map</a></li>
+            <li><a href="irrigation-table.html">Irrigation Table</a></li>
+            <li><a href="registration.html">Farmer Registration</a></li>
+            <li><a href="weather.html">Weather Forecast</a></li>
+            <li><a href="media.html">Multimedia Awareness</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Soil Moisture &amp; Irrigation Advisory Data</h1>
+        <p><em>Field-level sensor readings and daily irrigation requirements</em></p>
+    </header>
+
+    <hr>
+
+    <section>
+        <!-- Table with borders and cell padding -->
+        <table border="1" cellpadding="8" cellspacing="0">
+            <!-- 1. Caption -->
+            <caption><b>Daily Sugarcane Plot Irrigation Recommendations (KJS-AGR-01)</b></caption>
+
+            <!-- 2. Table Header -->
+            <thead>
+                <tr bgcolor="#e0f2fe">
+                    <th>Plot ID</th>
+                    <th>Farmer Name</th>
+                    <th>Soil Moisture (%)</th>
+                    <th>Weather</th>
+                    <th>Irrigation Recommendation</th>
+                    <th>Water Requirement</th>
+                </tr>
+            </thead>
+
+            <!-- 3. Table Body -->
+            <tbody>
+                <!-- Row 1 & 2 share the same Weather using rowspan="2" -->
+                <tr>
+                    <td>PLOT-A1</td>
+                    <td>Ramesh Patil</td>
+                    <td>28% (<mark>Low</mark>)</td>
+                    <td rowspan="2" align="center">Sunny, 34°C</td> <!-- 👈 rowspan="2" merges 2 rows -->
+                    <td>Run Drip Irrigation for 45 mins</td>
+                    <td>4,500 Liters</td>
+                </tr>
+
+                <tr>
+                    <td>PLOT-A2</td>
+                    <td>Suresh Shinde</td>
+                    <td>32% (<mark>Low</mark>)</td>
+                    <!-- Weather cell is skipped here because it was merged from above! -->
+                    <td>Run Drip Irrigation for 35 mins</td>
+                    <td>3,800 Liters</td>
+                </tr>
+
+                <!-- Row 3 -->
+                <tr>
+                    <td>PLOT-B1</td>
+                    <td>Anil Deshmukh</td>
+                    <td>62% (Optimal)</td>
+                    <td align="center">Partly Cloudy, 30°C</td>
+                    <td>No irrigation needed today</td>
+                    <td>0 Liters</td>
+                </tr>
+
+                <!-- Row 4 -->
+                <tr>
+                    <td>PLOT-C1</td>
+                    <td>Vijay Pawar</td>
+                    <td>44% (Moderate)</td>
+                    <td align="center">Hot &amp; Dry, 36°C</td>
+                    <td>Run Sprinkler for 20 mins</td>
+                    <td>2,200 Liters</td>
+                </tr>
+            </tbody>
+
+            <!-- 4. Table Footer -->
+            <tfoot>
+                <tr bgcolor="#f1f5f9">
+                    <!-- 👈 colspan="5" merges the first 5 columns together -->
+                    <td colspan="5" align="right"><b>Total Daily Water Requirement:</b></td>
+                    <td><b>10,500 Liters</b></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 AI-based Smart Irrigation Advisory System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

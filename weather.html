@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast &amp; Farm Location</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="farm-info.html">Farm Dashboard</a></li>
+            <li><a href="advisory.html">Irrigation Advisory</a></li>
+            <li><a href="gallery.html">Farm Gallery</a></li>
+            <li><a href="plot-map.html">Farm Map</a></li>
+            <li><a href="irrigation-table.html">Irrigation Table</a></li>
+            <li><a href="registration.html">Farmer Registration</a></li>
+            <li><a href="weather.html">Weather Forecast</a></li>
+            <li><a href="media.html">Multimedia Awareness</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Farm Meteorological &amp; Geospatial Center</h1>
+        <p><em>Real-time agrometeorological data and satellite farm positioning</em></p>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- Required Section Title -->
+        <section>
+            <h2>Today's Weather Forecast</h2>
+            <p>
+                Real-time weather tracking helps determine evapotranspiration rates and prevents irrigating before rainfall.
+            </p>
+
+            <!-- 1. IMD Weather Forecast Embed -->
+            <h3>1. India Meteorological Department (IMD) Weather Bulletin</h3>
+            <iframe 
+                src="https://mausam.imd.gov.in/" 
+                title="IMD Official Weather Forecast" 
+                width="100%" 
+                height="450" 
+                loading="lazy">
+                <p>Your browser does not support iframes. <a href="https://mausam.imd.gov.in/" target="_blank">Click here to view the IMD Weather Portal</a>.</p>
+            </iframe>
+
+            <br><br>
+            <hr>
+
+            <!-- 2. Google Maps Farm Location Embed -->
+            <h3>2. Farm Geospatial Location (Sugarcane Field Station)</h3>
+            <p>Interactive satellite map locating the experimental sugarcane research farm (Somaiya Farm Node):</p>
+            <iframe 
+                src="https://maps.google.com/maps?q=K.J.+Somaiya+School+of+Engineering+Mumbai&t=m&z=15&ie=UTF8&iwloc=&output=embed" 
+                title="Google Maps Sugarcane Farm Location" 
+                width="100%" 
+                height="400" 
+                loading="lazy">
+                <p>Your browser does not support iframes. <a href="https://maps.google.com" target="_blank">Click here to view Farm Location on Google Maps</a>.</p>
+            </iframe>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 AI-based Smart Irrigation Advisory System. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
