@@ -1,0 +1,33 @@
+.page-layout {
+    display: flex;
+    gap: 28px;
+    margin-top: 25px;
+    align-items: flex-start;
+}
+
+.layout-sidebar {
+    width: 320px;
+    flex-shrink: 0;
+    order: 1;
+}
+
+.layout-content {
+    flex: 1;
+    order: 2;
+}
+
+footer {
+    clear: both;
+    margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .page-layout {
+        flex-direction: column;
+    }
+    .layout-sidebar {
+        width: 100%;
+    }
+}

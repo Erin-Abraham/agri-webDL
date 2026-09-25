@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Soil Moisture &amp; Irrigation Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
 
@@ -27,12 +29,9 @@
     <hr>
 
     <section>
-        <!-- Table with borders and cell padding -->
         <table border="1" cellpadding="8" cellspacing="0">
-            <!-- 1. Caption -->
             <caption><b>Daily Sugarcane Plot Irrigation Recommendations (KJS-AGR-01)</b></caption>
 
-            <!-- 2. Table Header -->
             <thead>
                 <tr bgcolor="#e0f2fe">
                     <th>Plot ID</th>
@@ -44,14 +43,12 @@
                 </tr>
             </thead>
 
-            <!-- 3. Table Body -->
             <tbody>
-                <!-- Row 1 & 2 share the same Weather using rowspan="2" -->
                 <tr>
                     <td>PLOT-A1</td>
                     <td>Ramesh Patil</td>
                     <td>28% (<mark>Low</mark>)</td>
-                    <td rowspan="2" align="center">Sunny, 34°C</td> <!-- 👈 rowspan="2" merges 2 rows -->
+                    <td rowspan="2" align="center">Sunny, 34°C</td>
                     <td>Run Drip Irrigation for 45 mins</td>
                     <td>4,500 Liters</td>
                 </tr>
@@ -60,12 +57,10 @@
                     <td>PLOT-A2</td>
                     <td>Suresh Shinde</td>
                     <td>32% (<mark>Low</mark>)</td>
-                    <!-- Weather cell is skipped here because it was merged from above! -->
                     <td>Run Drip Irrigation for 35 mins</td>
                     <td>3,800 Liters</td>
                 </tr>
 
-                <!-- Row 3 -->
                 <tr>
                     <td>PLOT-B1</td>
                     <td>Anil Deshmukh</td>
@@ -75,7 +70,6 @@
                     <td>0 Liters</td>
                 </tr>
 
-                <!-- Row 4 -->
                 <tr>
                     <td>PLOT-C1</td>
                     <td>Vijay Pawar</td>
@@ -86,10 +80,8 @@
                 </tr>
             </tbody>
 
-            <!-- 4. Table Footer -->
             <tfoot>
                 <tr bgcolor="#f1f5f9">
-                    <!-- 👈 colspan="5" merges the first 5 columns together -->
                     <td colspan="5" align="right"><b>Total Daily Water Requirement:</b></td>
                     <td><b>10,500 Liters</b></td>
                 </tr>

@@ -2,13 +2,50 @@
 <html>
 <head>
     <title>Smart Irrigation Advisory System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <style>
+        nav ul {
+            list-style-type: none;
+            margin: 10px 0;
+            padding: 10px 0;
+            background-color: #2e7d32;
+            text-align: center;
+            border-radius: 6px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 4px;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 14px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            background-color: #1b5e20;
+            color: #e8f5e9;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>AI-based Smart Irrigation Advisory System</h1>
-        <p><em>Smart Irrigation using AI & Sensor Technology</em></p>
+
+    <header style="background-color: #e8f5e9; padding: 20px; border: 2px solid #2e7d32; border-radius: 6px;">
+        <h1 style="color: #1b5e20; text-align: center; margin-bottom: 6px;">AI-based Smart Irrigation Advisory System</h1>
+        <p style="text-align: center; color: #2e7d32; margin-top: 0;"><em>Smart Irrigation using AI &amp; Sensor Technology</em></p>
     </header>
+
     <hr>
+
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -22,28 +59,87 @@
             <li><a href="media.html">Multimedia Awareness</a></li>
         </ul>
     </nav>
-    <footer style="position: fixed; bottom: 3px; right: 5px;">
-        <p>&copy; 2026 Smart Irrigation Advisory System. All rights reserved.</p>
+
+    <div class="offer-box">
+        <h2>Exclusive Farmer Subsidy Scheme</h2>
+        <p class="offer-highlight">
+            Get up to <strong>80% Government Subsidy</strong> on IoT Smart Drip Kits under the <em>PM Krishi Sinchayee Yojana (PMKSY)</em>.
+        </p>
+        <p class="offer-deadline">
+            Limited Period Scheme — Register your sugarcane plot before <strong>30th October 2026</strong>!
+        </p>
+        <a href="registration.html" class="offer-btn">Claim Subsidy Now</a>
+    </div>
+
+    <div class="page-layout">
+
+        <aside class="categories-card layout-sidebar">
+            <h3>Quick Tip &amp; Weather Alert</h3>
+            <p>
+                <strong>Weather forecast:</strong> Sunny, 34°C. Evapotranspiration rate is high today. 
+                Ensure soil moisture sensors are calibrated.
+            </p>
+            <hr>
+            <h3>Advisory Categories</h3>
+            <ul class="category-list">
+                <li><a href="farm-info.html">Soil Moisture Monitoring</a></li>
+                <li><a href="advisory.html">Irrigation Scheduling</a></li>
+                <li><a href="weather.html">Weather Forecasting</a></li>
+                <li><a href="plot-map.html">Interactive Farm Map</a></li>
+                <li><a href="irrigation-table.html">Daily Water Budgeting</a></li>
+            </ul>
+        </aside>
+
+        <main class="layout-content">
+            <section>
+                <h3>About the Smart Irrigation Advisory System</h3>
+                <p>
+                    This portal is designed for Sugarcane Crop (KJS-AGR-01) management. 
+                    It leverages real-time IoT soil sensors and AI predictive models to optimize water usage, 
+                    prevent crop water stress and improve sugarcane yield.
+                </p>
+            </section>
+
+            <article>
+                <h3>Today's AI Irrigation Highlight</h3>
+                <p>
+                    <strong>Status:</strong> Soil moisture in Plot A is at 32% (below threshold). 
+                    AI recommends initiating drip irrigation for <strong>45 minutes</strong> during early morning hours.
+                </p>
+            </article>
+
+            <section>
+                <h3>Featured Smart Irrigation Equipment</h3>
+                <p><em>Equip your farm with precision sensors and automated valves:</em></p>
+                
+                <div class="product-card">
+                    <h3>IoT Soil Probe</h3>
+                    <p>FDR soil moisture sensor probe with LoRaWAN wireless connectivity.</p>
+                    <p><strong>₹2,499</strong></p>
+                    <button type="button">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <h3>Auto Drip Valve</h3>
+                    <p>Solar-powered 12V motorized solenoid valve for automated zone watering.</p>
+                    <p><strong>₹4,199</strong></p>
+                    <button type="button">View Details</button>
+                </div>
+
+                <div class="product-card">
+                    <h3>Weather Station</h3>
+                    <p>Solar node tracking temperature, humidity, and rainfall rates in real-time.</p>
+                    <p><strong>₹8,999</strong></p>
+                    <button type="button">View Details</button>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Smart Irrigation Advisory System. All rights reserved. - Erin Abraham</p>
     </footer>
-    <section>
-        <h3>About the Smart Irrigation Advisory System</h3>
-        <p>This portal is designed for Sugarcane Crop (KJS-AGR-01) management. 
-            It leverages real-time IoT soil sensors and AI predictive models to optimize water usage, 
-            prevent crop water stress and improve sugarcane yield.</p>
-    </section>
-    <article>
-        <h3>Today's AI Irrigation Highlight</h3>
-        <p>
-            <strong>Status:</strong> Soil moisture in Plot A is at 32% (below threshold). 
-            AI recommends initiating drip irrigation for <strong>45 minutes</strong> during early morning hours.
-        </p>
-    </article>
-    <aside>
-        <h3>Quick Tip &amp; Weather Alert</h3>
-        <p>
-            <strong>Weather forecast:</strong> Sunny, 34°C. Evapotranspiration rate is high today. 
-            Ensure soil moisture sensors are calibrated.
-        </p>
-    </aside>
+
 </body>
 </html>
