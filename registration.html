@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Farmer Registration - Smart Irrigation</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.css">
@@ -29,7 +30,7 @@
     <hr>
 
     <main>
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form id="registrationForm" action="#" method="post" enctype="multipart/form-data">
 
             <fieldset>
                 <legend><b>1. Farmer Personal Information</b></legend>
@@ -37,31 +38,25 @@
                     <label for="farmer-name">Full Name: *</label><br>
                     <input type="text" id="farmer-name" name="farmer_name" 
                            placeholder="Enter your full name" 
-                           autofocus 
-                           required>
+                           autofocus>
                 </p>
 
                 <p>
                     <label for="mobile">Mobile Number: *</label><br>
                     <input type="tel" id="mobile" name="mobile" 
-                           placeholder="10-digit mobile number" 
-                           pattern="[0-9]{10}" 
-                           title="Please enter a valid 10-digit mobile number" 
-                           required>
+                           placeholder="10-digit mobile number">
                 </p>
 
                 <p>
                     <label for="email">Email Address: *</label><br>
                     <input type="email" id="email" name="email" 
-                           placeholder="farmer@example.com" 
-                           required>
+                           placeholder="farmer@example.com">
                 </p>
 
                 <p>
                     <label for="village">Village / Taluka: *</label><br>
                     <input type="text" id="village" name="village" 
-                           placeholder="Enter your village or district" 
-                           required>
+                           placeholder="Enter your village or district">
                 </p>
             </fieldset>
 
@@ -73,13 +68,12 @@
                 <p>
                     <label for="plot-id">Plot Identifier (Plot ID): *</label><br>
                     <input type="text" id="plot-id" name="plot_id" 
-                           placeholder="e.g. KJS-PLOT-101" 
-                           required>
+                           placeholder="e.g. KJS-PLOT-101">
                 </p>
 
                 <p>
                     <label for="crop-stage">Current Sugarcane Crop Stage: *</label><br>
-                    <select id="crop-stage" name="crop_stage" required>
+                    <select id="crop-stage" name="crop_stage">
                         <option value="">-- Select Crop Stage --</option>
                         <option value="Germination">Germination Phase (Days 0-45)</option>
                         <option value="Tillering">Tillering Phase (Days 45-120)</option>
@@ -90,7 +84,7 @@
 
                 <p>
                     <label for="soil-type">Soil Type: *</label><br>
-                    <select id="soil-type" name="soil_type" required>
+                    <select id="soil-type" name="soil_type">
                         <option value="">-- Select Soil Type --</option>
                         <option value="Black Soil">Black Cotton Soil</option>
                         <option value="Loamy">Loamy Soil</option>
@@ -101,7 +95,7 @@
 
                 <p>
                     <label for="irrigation-method">Existing Irrigation Method: *</label><br>
-                    <select id="irrigation-method" name="irrigation_method" required>
+                    <select id="irrigation-method" name="irrigation_method">
                         <option value="">-- Select Irrigation Method --</option>
                         <option value="Drip">Drip Irrigation (Recommended)</option>
                         <option value="Sprinkler">Sprinkler Irrigation</option>
@@ -112,12 +106,12 @@
 
                 <p>
                     <label for="reg-date">Registration / Sowing Date: *</label><br>
-                    <input type="date" id="reg-date" name="reg_date" required>
+                    <input type="date" id="reg-date" name="reg_date">
                 </p>
 
                 <p>
                     <label for="farm-photo">Upload Farm Photo: *</label><br>
-                    <input type="file" id="farm-photo" name="farm_photo" accept="image/*" required>
+                    <input type="file" id="farm-photo" name="farm_photo" accept="image/*">
                 </p>
             </fieldset>
 
@@ -132,10 +126,9 @@
     </main>
 
     <hr>
-
     <footer>
         <p>&copy; 2026 AI-based Smart Irrigation Advisory System. All rights reserved.</p>
     </footer>
-
+    <script src="validation.js"></script>
 </body>
 </html>
